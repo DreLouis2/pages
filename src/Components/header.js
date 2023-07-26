@@ -6,12 +6,12 @@ import logo from './logoB.png'
 
 function Header() {
   return (
-    <Navbar expand="md" className="d-flex justify-content-evenly" style={{margin: 'auto', width: '100%'}}>
+    <Navbar expand="lg" className="d-flex justify-content-evenly navbar-dark" style={{margin: 'auto', width: '100%'}}>
       <Container style={{}} className=''>
         <Navbar.Brand href="home" >
             <img alt='Signature Logo' src={logo} style={{width: '130px'}}/>
         </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Toggle className='' aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto d-flex justify-content-end" style={{width: '100%'}}>
                 <Nav.Link style={{color: 'white'}} href="/home">Home</Nav.Link>
