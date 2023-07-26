@@ -80,7 +80,7 @@ const Background = () => {
                       "value": "#0BDA51"
                     },
                     "shape": {
-                      "type": "circle",
+                      "type": "triangle",
                       "stroke": {
                         "width": 0,
                         "color": "#000000"
