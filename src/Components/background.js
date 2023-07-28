@@ -1,7 +1,6 @@
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
-//import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
-import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
+import { loadSlim } from "tsparticles-slim"; 
 
 const Background = () => {
     const particlesInit = useCallback(async engine => {
@@ -18,16 +17,13 @@ const Background = () => {
     }, []);
 
     return (
+      <div style={{width: '50px', zIndex: '1'}}>
         <Particles
+          
             id="tsparticles"
             init={particlesInit}
             loaded={particlesLoaded}
             options={{
-                background: {
-                    color: {
-                        value: "#000000",
-                    },
-                },
                 fpsLimit: 120,
                 "interactivity": {
                     "detect_on": "canvas",
@@ -70,17 +66,17 @@ const Background = () => {
                   },
                 "particles": {
                     "number": {
-                      "value": 400,
+                      "value": 100,
                       "density": {
                         "enable": true,
                         "value_area": 800
                       }
                     },
                     "color": {
-                      "value": "#0BDA51"
+                      "value": "#1513f9"
                     },
                     "shape": {
-                      "type": "triangle",
+                      "type": "circle",
                       "stroke": {
                         "width": 0,
                         "color": "#000000"
@@ -139,6 +135,7 @@ const Background = () => {
                 detectRetina: true,
             }}
         />
+        </div>
     );
 };
 
