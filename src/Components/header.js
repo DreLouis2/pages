@@ -38,7 +38,7 @@ function Header({theme}) {
         </Container>
     </Navbar>
     :
-    <Navbar expand="lg" className="d-flex justify-content-evenly navbar-dark" style={{margin: 'auto', width: '100%', position: 'relative'}}>
+    <Navbar expand="lg" className="d-flex justify-content-evenly nav-dark" style={{margin: 'auto', width: '100%', position: 'relative'}}>
     <Container style={{}} className=''>
       <Navbar.Brand href="home" >
           <img alt='Signature Logo' src={logo} style={{width: '130px'}}/>
