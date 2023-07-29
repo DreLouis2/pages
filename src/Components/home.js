@@ -8,17 +8,17 @@ function Home() {
         <>
 
 
-        <div className='d-flex flex-column' style={{position: 'relative'}}>
-            <Container className='d-flex justify-content-evenly'>
-                <img alt='face' src={face} width={'500px'} style={{margin: 'auto'}}/>
-
-                <div className='text-light d-flex flex-column justify-content-center' style={{fontWeight:'bold', fontSize: 'large'}}>
-                    <p>HI, I'M DEANDRE LOUIS</p>
-                    <p>FULL STACK WEB DEVELOPER</p>
-                    <p>DIGITAL ARTIST</p>
+        <div className='d-flex flex-row' style={{position: 'relative'}}>
+                <div className='d-flex justify-content-end' style={{flex: '1'}}>
+                    <img alt='face' src={face} width={'50%'}/>
                 </div>
-
-            </Container>
+                <div className='d-flex align-items-center' style={{width: '100%', margin:  '0', textAlign: 'center',  flex: '1'}}>
+                    <div className='d-flex flex-column justify-content-start' style={{fontWeight:'bold', fontSize: 'x-large', textAlign: 'left'}}>
+                        <p>HI, I'M DEANDRE LOUIS</p>
+                        <p>FULL STACK WEB DEVELOPER</p>
+                        <p>DIGITAL ARTIST</p>
+                    </div>
+                </div>
         </div>
         </>
       );

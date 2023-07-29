@@ -41,22 +41,10 @@ function App() {
     theme={theme}
     />
 
-        <div className='d-flex flex-column' style={{position: 'relative'}}>
-            <Container className='d-flex justify-content-evenly'>
-                <img alt='face' src={face} width={'500px'} style={{margin: 'auto'}}/>
-
-                <div className='d-flex flex-column justify-content-center' style={{fontWeight:'bold', fontSize: 'large'}}>
-                    <p>HI, I'M DEANDRE LOUIS</p>
-                    <p>FULL STACK WEB DEVELOPER</p>
-                    <p>DIGITAL ARTIST</p>
-                </div>
-
-            </Container>
-        </div>
-    
+   
     <Routes>
-                  <Route exact path="/home" element={<Home/>}/>
-                  <Route exact path="/register" element={() => navigate("/")} />
+                  <Route path="/home" element={<Home/>}/>
+                  <Route path="/portfolio" element={() => navigate("/")} />
                   <Route
                     element={({ location }) => {
                       return (
@@ -77,17 +65,17 @@ function App() {
 
     </Container>
     <ToggleButtonGroup 
-      type="radio" 
-      name="options" 
-      defaultValue={'white'}
-      style={{position:'sticky', bottom:5}}>
-                  <ToggleButton id="tbg-radio-1" value={'white'} onClick={toggleLight}>
-                    ☼
-                  </ToggleButton>
-                  <ToggleButton id="tbg-radio-2" variant='outline-dark' value={'black'} onClick={toggleDark}>
-                  ☾
-                  </ToggleButton>
-    </ToggleButtonGroup>
+        type="radio" 
+        name="options" 
+        defaultValue={'white'}
+        style={{position:'sticky', top:0,  }}>
+                    <ToggleButton id="tbg-radio-1" value={'white'} style={{height: '40px'}} onClick={toggleLight}>
+                      ☼
+                    </ToggleButton>
+                    <ToggleButton id="tbg-radio-2" variant='outline-dark' value={'black'} onClick={toggleDark}>
+                    ☾
+                    </ToggleButton>
+      </ToggleButtonGroup>
     </div>
     
   );
