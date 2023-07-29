@@ -6,13 +6,14 @@ import Home from './Components/home';
 import { useState, useEffect } from 'react';
 import { Button , ToggleButton, ToggleButtonGroup} from 'react-bootstrap';
 import Background from './Components/background';
+import BackgroundWhite from './Components/backgroundWhite';
 import face from './Images/face.png'
 
 
 
 function App() {
 
-  const[theme, setTheme] = useState('white')
+  const[theme, setTheme] = useState('black')
   
 
   const navigate = useNavigate();
@@ -33,8 +34,8 @@ function App() {
   }, [theme]);
   
   return (
-    <div className='theme' style={{backgroundColor: '', top: '0px', right: '0px', bottom: '0px', left: '0px'}}>
-    <Background/>
+    <div className='theme' style={{top: '0px', right: '0px', bottom: '0px', left: '0px'}}>
+    {theme === 'white'? <BackgroundWhite/>  : <Background/>}
     <Container>
     
     <Header

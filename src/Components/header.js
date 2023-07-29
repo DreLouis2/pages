@@ -22,10 +22,9 @@ function Header({theme}) {
 
   return (
     theme==='white'?
-    <Navbar expand="lg" className="d-flex justify-content-evenly " style={{margin: 'auto', width: '100%', position: 'relative'}}>
-      <Container style={{}} className=''>
-        <Navbar.Brand href="/home" as={Link}>
-            <img alt='Signature Logo' src={logo} style={{width: '130px'}}/>
+    <Navbar expand="lg" className="d-flex" style={{ width: '100%', position: 'relative'}}>
+        <Navbar.Brand href="/home" className='m-0 p-0' as={Link}>
+            <img alt='Signature Logo' src={logo} style={{width: '100px', margin: 0, padding:0}}/>
         </Navbar.Brand>
             <Navbar.Toggle className='' aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
@@ -36,15 +35,13 @@ function Header({theme}) {
                 <Nav.Link as={Link} href="#link" style={{color: 'black'}}>Contact Me</Nav.Link>
             </Nav>
             </Navbar.Collapse>
-        </Container>
     </Navbar>
     :
-    <Navbar expand="lg" className="d-flex justify-content-evenly nav-dark" style={{margin: 'auto', width: '100%', position: 'relative'}}>
-    <Container style={{}} className=''>
-      <Navbar.Brand href="home" >
-          <img alt='Signature Logo' src={logo} style={{width: '130px'}}/>
+    <Navbar expand="lg" className="d-flex nav-dark" style={{width: '100%', position: 'relative'}}>
+      <Navbar.Brand href="home" className='m-0 p-0' as={Link}>
+          <img alt='Signature Logo' src={logo} style={{width: '100px', margin: 0, padding:0}}/>
       </Navbar.Brand>
-          <Navbar.Toggle className='' style={{backgroundColor:  'blue'}} aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle className='' style={{backgroundColor:  'white'}} aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto d-flex justify-content-end" style={{width: '100%', fontWeight: 'bold'}}>
               <Nav.Link href="/home" style={{color: 'white'}}>Home</Nav.Link>
@@ -53,7 +50,6 @@ function Header({theme}) {
               <Nav.Link href="#link" style={{color: 'white'}}>Contact Me</Nav.Link>
           </Nav>
           </Navbar.Collapse>
-      </Container>
   </Navbar>
   )
 }

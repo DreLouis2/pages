@@ -65,3 +65,12 @@
   background-color: #fff;
   color: black;
 }
+
+.white p{
+  color: rgb(87, 87, 87);
+  font-weight: 500;
+}
+
+.black p{
+  color: rgb(163, 163, 163);
+}
