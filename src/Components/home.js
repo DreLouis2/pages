@@ -6,7 +6,6 @@ import Background from './background';
 
 function Home() {
 
-
     return (
         <>
         <div className='d-flex flex-row my-5' style={{position: 'relative'}}>

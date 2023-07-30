@@ -33,6 +33,13 @@ function App() {
     document.body.className = theme;
   }, [theme]);
   
+  const [comp, setComp] = useState('home')
+
+  useEffect(() => {
+    console.log(comp)
+  }, [comp]);
+  
+
   return (
     <div className='theme' style={{top: '0px', right: '0px', bottom: '0px', left: '0px'}}>
     {theme === 'white'? <BackgroundWhite/>  : <Background/>}
@@ -40,8 +47,10 @@ function App() {
     
     <Header
     theme={theme}
+    setComp={setComp}
     />
 
+    <Home/>
    
     <Routes>
                   <Route path="/home" element={<Home/>}/>
