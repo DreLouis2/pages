@@ -50,28 +50,10 @@ function App() {
     setComp={setComp}
     />
 
-    <Home/>
-   
     <Routes>
-                  <Route path="/home" element={<Home/>}/>
-                  <Route path="/portfolio" element={() => navigate("/")} />
-                  <Route
-                    element={({ location }) => {
-                      return (
-                        <div
-                          style={{
-                            padding: "50px",
-                            width: "100%",
-                            textAlign: "center",
-                          }}
-                        >
-                          The page <code>{location.pathname}</code> could not be
-                          found.
-                        </div>
-                      );
-                    }}
-                  />
-                </Routes>
+      <Route  exact path='/' element={<Home/>}>
+      </Route>
+    </Routes>
 
     </Container>
     <ToggleButtonGroup 
