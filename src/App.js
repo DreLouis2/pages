@@ -51,7 +51,7 @@ function App() {
     />
 
     <Routes>
-      <Route  exact path='/' element={<Home/>}>
+      <Route  exact path='/pages/index.html/home' element={<Home/>}>
       </Route>
     </Routes>
 
